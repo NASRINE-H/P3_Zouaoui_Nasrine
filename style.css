@@ -60,7 +60,14 @@ main {
   justify-content: center;
   height: 100%;
   width: 100%;
+  transform: scale(1);
   opacity: 1;
+  transition: all 1s;
+
+}
+.menu_zoom:hover .menus_zoom_menu {
+  transform: scale(1.2);
+  opacity: 60%;
 }
 
 footer {
@@ -79,12 +86,15 @@ footer .btns {
   display: flex;
   justify-content: space-between;
   padding: 2px;
+  text-decoration: none;
 }
 footer .btn_gauche{
   padding-left: 10px;
+  text-decoration: none;
 }
 footer .btn_droit{
   padding-right: 10px;
+  text-decoration: none;
 }
 .menu_zoom_menu1{
   background: #fcdfdb;
@@ -94,13 +104,17 @@ footer .btn_droit{
   font-family: 'Devonshire' ,cursive ;
   color: #3d1319;
   font-size:1em;
-  font-weight: 500;
+  font-weight: 400;
+  padding-bottom:;
 }
 
 .menu_zoom_menu1 h2{
 font-family:'kalam', cursive ;
-font-size: 1.8em;
+font-size: 1.6em;
 color:#000;
+padding-left: 15px;
+padding-top: 0px;
+font-weight: 600;
 }
 
 .menu_zoom_menu2
@@ -109,13 +123,16 @@ color:#000;
   }
 .menu_zoom_menu2 h1{
      font-family:'Croissant one', cursive;
-     font-size: 1em;
+     font-size: 0.8em;
      font-weight: 500;
+     color: #c77412;
 }
 .menu_zoom_menu2 h2{
   font-size: 1.8em;
   font-family: 'PT Serif Caption', serif;
   color: #c77412;
+  padding-left: 40px;
+  font-weight: 700;
 }
 .menu_zoom_menu3{
   background: #edefef;
@@ -124,11 +141,14 @@ color:#000;
   font-family:'Dancing Script', cursive;
   font-size: 1.2em;
   font-weight: 500;
+  color: #0887fb ;
 }
 .menu_zoom_menu3 h2{
   font-family:'Kalam', cursive, sans-serif;
   color: #0887fb;
   font-size:1.8em;
+  padding-left: 40px;
+  font-weight: 500;
 }
 
 
@@ -139,11 +159,14 @@ color:#000;
   font-family: 'Kaushan Script', cursive;
   font-size: 1.2em;
   font-weight: 500;
+  color: #72bf56;
 }
 .menu_zoom_menu4 h2{
   font-family: 'Kalam', cursive, sans-serif;
   font-size: 1.8em;
   color: #72bf56;
+  padding-left: 40px;
+  font-weight: 500;
 }
 .prochainement{
   font-size: 1.2em;
@@ -165,5 +188,12 @@ color:#000;
   font-family: "uniform-5-regular", 'Segoe UI', Tahoma,Verdana, sans-serif;
 }
 .menus_zoom_menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   text-decoration: none;
+  padding-left: 60px;
+  padding-right: 50px;
+
+  
 }
