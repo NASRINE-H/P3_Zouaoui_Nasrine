@@ -1,10 +1,10 @@
 body {
-  width: 99%;
-  height: 98%;
+  width: 100%;
+  height: 100%;
 }
 
 header {
-  width: 95%%;
+  width: 100%;
   height: 90px;
   background: #579c87;
   display: flex;
@@ -22,7 +22,6 @@ header h1 {
 }
 
 section {
-  flex: 1 1 auto;
   overflow-y: auto;
   height: 74vh;
   flex-direction: column;
@@ -61,9 +60,7 @@ main {
   justify-content: center;
   height: 100%;
   width: 100%;
-  transform: scale(1);
   opacity: 1;
-  transition: all 1s;
 }
 
 footer {
@@ -78,7 +75,7 @@ footer {
   margin-top: 0px;
 }
 footer .btns {
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 2px;
@@ -89,5 +86,84 @@ footer .btn_gauche{
 footer .btn_droit{
   padding-right: 10px;
 }
+.menu_zoom_menu1{
+  background: #fcdfdb;
+}
 
-/*# sourceMappingURL=style.css.map */
+.menu_zoom_menu1 h1{
+  font-family: 'Devonshire' ,cursive ;
+  color: #3d1319;
+  font-size:1em;
+  font-weight: 500;
+}
+
+.menu_zoom_menu1 h2{
+font-family:'kalam', cursive ;
+font-size: 1.8em;
+color:#000;
+}
+
+.menu_zoom_menu2
+  {
+    background: #fff5fe;
+  }
+.menu_zoom_menu2 h1{
+     font-family:'Croissant one', cursive;
+     font-size: 1em;
+     font-weight: 500;
+}
+.menu_zoom_menu2 h2{
+  font-size: 1.8em;
+  font-family: 'PT Serif Caption', serif;
+  color: #c77412;
+}
+.menu_zoom_menu3{
+  background: #edefef;
+}
+.menu_zoom_menu3 h1{
+  font-family:'Dancing Script', cursive;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.menu_zoom_menu3 h2{
+  font-family:'Kalam', cursive, sans-serif;
+  color: #0887fb;
+  font-size:1.8em;
+}
+
+
+.menu_zoom_menu4{
+  background: #fdfffd;
+}
+.menu_zoom_menu4 h1{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.menu_zoom_menu4 h2{
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: 1.8em;
+  color: #72bf56;
+}
+.prochainement{
+  font-size: 1.2em;
+  width: 45%;
+  height: 30px;
+  background: #579c87;
+  color: #fdcb46;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.prochainement p{
+  font-family: "uniform-5-regular", 'Segoe UI', Tahoma,Verdana, sans-serif;
+}
+.menus_zoom_menu {
+  text-decoration: none;
+}
