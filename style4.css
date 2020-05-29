@@ -117,19 +117,18 @@ footer .btn_droit{
   padding-right: 10px;
   text-decoration: none;
 }
-
-  section{
+ section{
       width:50%;
       margin:auto;
       display: flex;
       flex-direction: column;
       align-items: center;
-      border:1em solid #fcdfdb;
+      border:1em solid #fff;
       box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-      background:#fcdfdb ;
+      background:#fff ;
       margin-bottom: 50px;
       padding-right: 40px;
-  }
+     }
   .menus{
     display:flex;
     justify-content: center;
@@ -139,50 +138,27 @@ footer .btn_droit{
    
     
   }
-  .grand_titre h1{
-    font-family: 'Devonshire', cursive;
-    font-size: 2.5em;
-    font-weight: 400;
-    color:#3d1319;
+  .grand_titre{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
+    font-size: 2.25em;
+    color: #72bf56;
+  background: linear-gradient(to right,#5dad4b, #9ee46e);
+  color: transparent;
+   background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   }
-  .sous_titre h3{
+  .plat ,.plat_principaux,.dessert
+  {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       font-family: 'Kalam', cursive, sans-serif;
-      font-size: 1.4em;
-      color:#3d1319;
+    
   }
-  .plats  {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: 1em;
-    font-weight:700 ;
-    color: #3d1319;
-    
-    
- }
-
- .plats_principaux{
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: 1em;
-    font-weight:700 ;
-    color: #3d1319;
-    
- }
- .dessert{
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: 1em;
-    font-weight:700 ;
-    color: #3d1319;
-    
- }
-
- .plat 
- {
-     display: flex;
-     justify-content: space-between;
-    
- }
- .nom_plat{
+  .nom_plat{
     justify-self: flex-start;
     font-weight: 500;
     
@@ -199,4 +175,11 @@ footer .btn_droit{
     justify-self: flex-end;
 
 
+}
+.sous_titre h3{
+    display: flex;
+    justify-content: center;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: 1.4em;
+    color:#000;
 }
