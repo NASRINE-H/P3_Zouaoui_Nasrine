@@ -121,82 +121,57 @@ footer .btn_droit{
   section{
       width:50%;
       margin:auto;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      border:1em solid #fcdfdb;
+      border:1em solid #edefef;
       box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-      background:#fcdfdb ;
+      background: #edefef; 
       margin-bottom: 50px;
       padding-right: 40px;
+  
   }
+  
   .menus{
     display:flex;
     justify-content: center;
     font-family: "uniform-3-regular", 'Segoe UI', Tahoma,Verdana, sans-serif;
     font-weight: 700;
-    font-size: 0.6em;
-   
-    
+    font-size: 0.8em;
   }
-  .grand_titre h1{
-    font-family: 'Devonshire', cursive;
+
+  .grand_titre{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
     font-size: 2.5em;
-    font-weight: 400;
-    color:#3d1319;
+    color: #0887fb ;
+    background: linear-gradient(to right,#0238e1, #4593f2);
+  color: transparent;
+   background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+     margin: 2.2em 0 1.5em 0;
   }
   .sous_titre h3{
-      display: flex;
-      justify-content: center;
-      font-family: 'Kalam', cursive, sans-serif;
-      font-size: 1.4em;
-      color:#3d1319;
-  }
-  .plats  {
+    display: flex;
+    justify-content: center;
     font-family: 'Kalam', cursive, sans-serif;
-    font-size: 1em;
-    font-weight:700 ;
-    color: #3d1319;
-    
-    
- }
+    font-size: 1.4em;
+    color:#000;
+}
 
- .plats_principaux{
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: 1em;
-    font-weight:700 ;
-    color: #3d1319;
-    
- }
- .dessert{
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: 1em;
-    font-weight:700 ;
-    color: #3d1319;
-    
- }
-
- .plat 
+.plat ,.dessert
  {
      display: flex;
      justify-content: space-between;
     
  }
- .nom_plat{
-    justify-self: flex-start;
-    font-weight: 500;
-    
- }
-
-.prix_plat{
-    font-weight: 500;
-    justify-self: flex-end;
-
-
-}
-.nom_dessert{
-    font-weight: 500;
-    justify-self: flex-end;
-
-
+ .plats ,.plats_principaux ,.dessert {
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: 1em;
+    font-weight:500 ;
+    color:#000;
 }
