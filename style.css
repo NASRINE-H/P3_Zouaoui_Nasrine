@@ -73,7 +73,7 @@ main {
 
 .petitMenu:hover .menus_zoom_menu {
   transform: scale(1.2);
-  opacity: 60%;
+  opacity: 80%;
 }
 
 
