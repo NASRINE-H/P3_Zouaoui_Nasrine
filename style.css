@@ -39,19 +39,20 @@ main {
   flex-direction: column;
 }
 
-.menus {
+.listedesmenus {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
   background: #fff;
 }
 
-.menu_zoom {
+.petitMenu {
   width: 250.13px;
   height: 350px;
   margin: 0 1.42em 1.42em 1.425em;
   box-shadow: 2px 2px 11px 0px black;
   overflow: hidden;
+  
 }
 
 .menus_zoom_menu {
@@ -67,9 +68,10 @@ main {
   transform: scale(1);
   opacity: 1;
   transition: all 1s;
-
 }
-.menu_zoom:hover .menus_zoom_menu {
+
+
+.petitMenu:hover .menus_zoom_menu {
   transform: scale(1.2);
   opacity: 60%;
 }
@@ -97,10 +99,56 @@ footer .btns a {
   color: #fdcb46;
   font-size: 1.5em;
 }
+.prochainement{
+  font-size: 1.2em;
+  width: 230px;
+  height: 30px;
+  background: #579c87;
+  color: #fdcb46;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  
+}
+  
+
 
 .prochainement p {
   font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+p span {
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+p span:nth-child(2) {
+  animation-delay: .5s;
+}
+
+p span:nth-child(3) {
+  animation-delay: .9s;
+}
+
 .btns_btn {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 1s;
@@ -144,26 +192,6 @@ footer .btns a {
   }
 }
 
-@keyframes blink {
-  0% {
-    opacity: 0.1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.1;
-  }
-}
-
-
-p span:nth-child(2) {
-  animation-delay: .5s;
-}
-
-p span:nth-child(3) {
-  animation-delay: .9s;
-}
 
 footer .btn_gauche{
   padding-left: 10px;
@@ -175,45 +203,60 @@ footer .btn_droit{
 }
 .menu_zoom_menu1{
   background: #fcdfdb;
-  
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: auto;
 }
+
+.menu_zoom_menu1 h1, .menu_zoom_menu2 h1, .menu_zoom_menu3 h1, .menu_zoom_menu4 h1 
+{ 
+  width: 37,57%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+br {
+  content: "";
+  display: block;
+  margin-bottom: 0em;
+}
+  
 .icon{
   width: 15%;
   height: 10%;
-  padding-left:50px;
   padding-bottom: 0%;
-
+  align-self: center;
 }
-
-.menu_zoom_menu1 .menu_text{
-  font-family:'kalam', cursive ;
-  font-size: 1em;
-  color:#3d1319;
-  font-weight: 600;
-  padding-left:80px;
-   
-  
-  }
-  
 
 .menu_zoom_menu1 span{
   font-family: 'Devonshire' ,cursive ;
   color :#3d1319;
   font-size: 0.7em;
   font-weight: 400;
-  padding-left:90px;
+}
+
+.menu_zoom_menu1 .menu_text
+{
+  font-family:'kalam', cursive ;
+  font-size: 1em;
+  color:#3d1319;
+  font-weight: 600;
+  width: 70%;
+  align-self: center;
 }
 
 .menu_zoom_menu2
   {
     background: #fff5fe;
-    padding-left: 55px;
   }
 
 .menu_zoom_menu2 span{
   font-family: 'Croissant One', cursive;
   font-size: 0.5em;
-  padding-left: 45px;
   background: linear-gradient(to right, #d17f45, #b07cd1);
   color: transparent;
    background-clip: text;
@@ -222,12 +265,15 @@ footer .btn_droit{
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.menu_zoom_menu2 h1{
-  font-size: 1.8em;
-  font-family: 'PT Serif Caption', serif;
+
+.menu_zoom_menu2 .menu_text
+{
+  font-size: 1em;
+  font-family: 'Croissant One', cursive;
   color: #c77412;
   font-weight: 700;
-  
+  width: 70%;
+  align-self: center;
 }
 .menu_zoom_menu3{
   background: #edefef;
@@ -237,7 +283,6 @@ footer .btn_droit{
   font-size: 0.6em;
   font-weight: 500;
   color: #0887fb ;
-  padding-right: 80px;
   background: linear-gradient(to right,#0238e1, #4593f2);
   color: transparent;
    background-clip: text;
@@ -246,12 +291,14 @@ footer .btn_droit{
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.menu_zoom_menu3 h1{
-  font-family:'Kalam', cursive, sans-serif;
+.menu_zoom_menu3 .menu_text{
+  font-family:'Dancing Script', cursive;
   color: #0887fb;
-  font-size:1.8em;
-  padding-left: 40px;
+  font-size:1em;
   font-weight: 500;
+  width: 70%;
+  align-self: center;
+
 }
 
 
@@ -271,29 +318,12 @@ footer .btn_droit{
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.menu_zoom_menu4 h1{
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: 1.8em;
+.menu_zoom_menu4 .menu_text{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1em;
   color: #72bf56;
-  padding-left: 40px;
   font-weight: 500;
-}
-.prochainement{
-  font-size: 1.2em;
-  width: 230px;
-  height: 30px;
-  background: #579c87;
-  color: #fdcb46;
-  border-radius: 10px;
-  padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  width: 75%;
   align-self: center;
-  display: flex;
-  align-content: center;
-  align-items: center;
-}
-.prochainement p{
-  font-family: "uniform-5-regular", 'Segoe UI', Tahoma,Verdana, sans-serif;
+
 }
