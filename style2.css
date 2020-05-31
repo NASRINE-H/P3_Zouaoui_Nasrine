@@ -42,9 +42,6 @@ footer .btns a {
   font-size: 1.5em;
 }
 
-.prochainement p {
-  font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 .btns_btn {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 1s;
@@ -100,15 +97,6 @@ footer .btns a {
   }
 }
 
-
-p span:nth-child(2) {
-  animation-delay: .5s;
-}
-
-p span:nth-child(3) {
-  animation-delay: .9s;
-}
-
 footer .btn_gauche{
   padding-left: 10px;
   text-decoration: none;
@@ -125,9 +113,9 @@ section{
     align-items: center;
     border:1em solid  #fff5fe;
     box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-    background: #fff5fe ;
+    background: #fff5fe;
     margin-bottom: 50px;
-    padding: 0em 0.2em 0em 0.2em;
+    /* padding: 0em 1em 0em 1em; */
 }
 .menus{
     display:flex;
@@ -149,25 +137,50 @@ section{
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
-.sous_titre h3{
+
+.titre_menu{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+
+}
+
+.ligne_gauche{
+  width: 30%;
+}
+.ligne_droit{
+  width: 30%;
+}
+.sous_titre1 h3{
     display: flex;
     justify-content: center;
     font-family: 'ogiremaregular';
     font-size:1.2em;
     font-weight: 700;
     color: #c67412;
-}
+    
+  }
+
 
 .plat{
     display: flex;
     justify-content: space-between;
-
+    align-self: center;
 }
 .plats  {
 
-    font-size: 1.2em;
-    color: #c67412;
-    font-weight: 500;
+font-size: 1.2em;
+
+color: #c67412;
+
+font-weight: 500;
+
+width: 80%;
+
+margin: auto;
 }
 
 .sous_titre2 h3{
@@ -182,6 +195,8 @@ section{
     font-size: 1.2em;
     color: #a56799;
     font-weight: 500;
+    width: 80%;
+    margin:  auto;
 }
 .sous_titre3 h3{
     display: flex;
@@ -196,6 +211,9 @@ section{
     font-size: 1.2em;
     color: #6e4ccc;
     font-weight: 500;
+    width:  80%;
+    margin: auto;
 }
 
     
+

@@ -156,8 +156,27 @@ footer .btn_droit{
       display: flex;
       justify-content: space-between;
       font-family: 'Kalam', cursive, sans-serif;
+      width: 100%;
+      margin: auto;
     
   }
+  .titre_menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  
+  }
+  
+  .ligne_gauche{
+    width: 30%;
+  }
+  .ligne_droit{
+    width: 30%;
+  }
+
   .nom_plat{
     justify-self: flex-start;
     font-weight: 500;
