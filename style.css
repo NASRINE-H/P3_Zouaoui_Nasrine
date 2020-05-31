@@ -50,14 +50,18 @@ main {
   width: 250.13px;
   height: 350px;
   margin: 0 1.42em 1.42em 1.425em;
-  box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  box-shadow: 2px 2px 11px 0px black;
   overflow: hidden;
 }
 
 .menus_zoom_menu {
-  display: flex;
+  
   flex-direction: column;
+  display: flex;
   justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  overflow: hidden;
   height: 100%;
   width: 100%;
   transform: scale(1);
@@ -69,6 +73,7 @@ main {
   transform: scale(1.2);
   opacity: 60%;
 }
+
 
 footer {
   margin-top: 0px;
@@ -170,31 +175,45 @@ footer .btn_droit{
 }
 .menu_zoom_menu1{
   background: #fcdfdb;
+  
 }
+.icon{
+  width: 15%;
+  height: 10%;
+  padding-left:50px;
+  padding-bottom: 0%;
+
+}
+
+.menu_zoom_menu1 .menu_text{
+  font-family:'kalam', cursive ;
+  font-size: 1em;
+  color:#3d1319;
+  font-weight: 600;
+  padding-left:80px;
+   
+  
+  }
+  
 
 .menu_zoom_menu1 span{
   font-family: 'Devonshire' ,cursive ;
   color :#3d1319;
   font-size: 0.7em;
   font-weight: 400;
-
-}
-
-.menu_zoom_menu1 h1{
-font-family:'kalam', cursive ;
-font-size: 1.6em;
-color:#3d1319;
-font-weight: 600;
-
+  padding-left:90px;
 }
 
 .menu_zoom_menu2
   {
     background: #fff5fe;
+    padding-left: 55px;
   }
+
 .menu_zoom_menu2 span{
   font-family: 'Croissant One', cursive;
   font-size: 0.5em;
+  padding-left: 45px;
   background: linear-gradient(to right, #d17f45, #b07cd1);
   color: transparent;
    background-clip: text;
@@ -208,6 +227,7 @@ font-weight: 600;
   font-family: 'PT Serif Caption', serif;
   color: #c77412;
   font-weight: 700;
+  
 }
 .menu_zoom_menu3{
   background: #edefef;
@@ -277,14 +297,3 @@ font-weight: 600;
 .prochainement p{
   font-family: "uniform-5-regular", 'Segoe UI', Tahoma,Verdana, sans-serif;
 }
-.menus_zoom_menu {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-decoration: none;
-  padding-left: 60px;
-  padding-right: 50px;
-  overflow: hidden;
-  
-}
-

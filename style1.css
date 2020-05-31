@@ -117,8 +117,7 @@ footer .btn_droit{
   padding-right: 10px;
   text-decoration: none;
 }
-
-  section{
+ section{
       width:50%;
       margin:auto;
       display: flex;
@@ -129,7 +128,7 @@ footer .btn_droit{
       background:#fcdfdb ;
       margin-bottom: 50px;
       padding-right: 40px;
-  }
+     }
   .menus{
     display:flex;
     justify-content: center;
