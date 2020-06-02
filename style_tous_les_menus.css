@@ -275,8 +275,7 @@ br {
   font-family: 'Croissant One', cursive;
   color: #c77412;
   font-weight: 700;
-  width: 70%;
-  align-self: center;
+margin:auto;
 }
 .menu_zoom_menu3{
   background: #edefef;
@@ -299,9 +298,7 @@ br {
   color: #0887fb;
   font-size:1em;
   font-weight: 500;
-  width: 70%;
-  align-self: center;
-
+  margin:auto;
 }
 
 
@@ -326,9 +323,7 @@ br {
   font-size: 1em;
   color: #72bf56;
   font-weight: 500;
-  width: 75%;
-  align-self: center;
-
+  margin:auto;
 }
 
 
