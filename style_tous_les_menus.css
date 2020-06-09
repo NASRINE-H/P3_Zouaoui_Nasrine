@@ -45,7 +45,7 @@ body {
   /*.prochainement :hover{
     background: #95c4b6;
     color: #fcbd14; }*/
-  }
+  
     
   
   .liste_menu
@@ -132,10 +132,7 @@ footer .btns a {
 
 
 .btns_btn {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
   animation:  wiggle 1s;
-  /* When the animation is finished >> start again */
-  /*animation-iteration-count: infinite;*/
 }
 /*@keyframes prochainement {
   0% {
@@ -206,7 +203,6 @@ main {
 
 .menu_zoom_menu1 h1, .menu_zoom_menu2 h1, .menu_zoom_menu3 h1, .menu_zoom_menu4 h1 
 { 
-  width: 37,57%;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -243,8 +239,8 @@ br {
   font-size: 1em;
   color:#3d1319;
   font-weight: 600;
-  width: 70%;
   align-self: center;
+  margin:auto;
 }
 
 .menu_zoom_menu2
@@ -257,10 +253,10 @@ br {
   font-size: 0.5em;
   background: linear-gradient(to right, #d17f45, #b07cd1);
   color: transparent;
-   background-clip: text;
+   background-clip: unset;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
 
@@ -282,18 +278,19 @@ margin:auto;
   color: #0887fb ;
   background: linear-gradient(to right,#0238e1, #4593f2);
   color: transparent;
-   background-clip: text;
+   background-clip: unset;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
 .menu_zoom_menu3 .menu_text{
+  width: 60%;
+  margin: auto;
   font-family: 'Caveat', cursive;
   color: #0887fb;
   font-size:1em;
   font-weight: 500;
-  margin:auto;
 }
 
 
@@ -307,13 +304,14 @@ margin:auto;
   color: #72bf56;
   background: linear-gradient(to right,#5dad4b, #9ee46e);
   color: transparent;
-   background-clip: text;
+   background-clip: unset;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
 .menu_zoom_menu4 .menu_text{
+  width: 60%;
   font-family: 'Caveat', cursive;
   font-size: 1em;
   color: #72bf56;
@@ -373,6 +371,7 @@ footer .btn_droit{
       box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
       background: #fff5fe;
       margin-bottom: 10%;
+      padding-bottom: 10%;
  }
   .m_delice
  {
@@ -411,6 +410,7 @@ footer .btn_droit{
     align-items: center;
     justify-content: center;
     justify-content: space-between;
+    padding-top: 10%;
   }
 
   img .ligne_gauche{
@@ -441,7 +441,7 @@ footer .btn_droit{
   margin: 3em 0 2.2em 0;
   background: linear-gradient(to right, #d17f45, #b07cd1);
   color: transparent;
-   background-clip: text;
+   background-clip: unset;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -461,7 +461,7 @@ footer .btn_droit{
   color: #72bf56;
   background: linear-gradient(to right,#5dad4b, #9ee46e);
   color: transparent;
-  background-clip: text;
+  background-clip: unset;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -476,7 +476,8 @@ footer .btn_droit{
       padding-left: 20px;
       padding-right: 20px;
       
-      background: linear-gradient(to top, rgb(61,19,25) 0%,rgb(61, 19, 25) 10%, transparent 10.01%) no-repeat left bottom /0 100%;
+      background: linear-gradient(to top, rgb(61,19,25) 0%,rgb(61, 19, 25) 10%, transparent 10.01%) 
+      no-repeat left bottom /0 100%;
       transition: background-size 0.7s  ease-in-out;
   
 }
@@ -556,7 +557,7 @@ h3:hover
 .plats_delice
 {
   font-family: 'Kalam', cursive, sans-serif;
-  font-size: 1.4em;
+  font-size: 1.2em;
     font-weight:500 ;
     color:#000;
     width: 80%;
@@ -665,6 +666,7 @@ section
   height: 35px;
 }
 }
+
 @media only screen and (min-width: 500px) {
   body{
     font-size: 80%;
@@ -680,6 +682,7 @@ section
   }
     
 }
+
 @media only screen and (min-width: 760px) {
   body{
     font-size: 100%;
