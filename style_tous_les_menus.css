@@ -3,6 +3,11 @@ body {
     height: 98%;
     font-size: 50%;
   }
+  main{
+    min-height: 100%;
+    position: relative;
+  
+  }
   
   header {
     width: 100%;
@@ -25,6 +30,7 @@ body {
     width: 230px;
     height: 30px;
     background: #579c87;
+    border: 2px solid #579c87;
     color: #fdcb46;
     border-radius: 10px;
     padding: 0.5rem 1rem;
@@ -32,10 +38,13 @@ body {
     justify-content: center;
     align-content: center;
     align-self: center;
-    display: flex;
-    align-content: center;
     align-items: center;
-    
+    cursor: pointer;
+    margin-bottom: 10%;
+  }
+  /*.prochainement :hover{
+    background: #95c4b6;
+    color: #fcbd14; }*/
   }
     
   
@@ -87,6 +96,11 @@ body {
   display: flex;
   align-content: center;
   align-items: center;
+  z-index: 4;
+  justify-content: space-between; 
+  position: fixed;
+  bottom: 0;
+  
 }
 footer .btns {
   width: 100%;
@@ -100,61 +114,37 @@ footer .btns a {
   font-size: 1.5em;
 }
 
+.btns_btn a:hover {
+  display: inline-block;
+  animation: wiggle 120ms linear 6;}
+
+  @keyframes  wiggle {
+    0% {
+      transform: translateX(0); }
+    33% {
+      transform: translateX(7px); }
+    66% {
+      transform: translateX(-7px); }
+    100% {
+      transform: translateX(0); } 
+  }
+  
+
 
 .btns_btn {
   /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 1s;
+  animation:  wiggle 1s;
   /* When the animation is finished >> start again */
-  animation-iteration-count: infinite;
+  /*animation-iteration-count: infinite;*/
 }
-
-@keyframes shake {
+/*@keyframes prochainement {
   0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
+    opacity: 0; }
   100% {
-    transform: translate(1px, -1px) rotate(-1deg);
-  }
-}
+    opacity: 1; } }*/
 
-@keyframes blink {
-  0% {
-    opacity: 0.1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.1;
-  }
-}
+
+
 section {
   
   height:100%;
@@ -212,6 +202,8 @@ main {
   width: auto;
 }
 
+
+
 .menu_zoom_menu1 h1, .menu_zoom_menu2 h1, .menu_zoom_menu3 h1, .menu_zoom_menu4 h1 
 { 
   width: 37,57%;
@@ -221,6 +213,9 @@ main {
   justify-content: center;
   margin-top: 0px;
 }
+
+
+
 
 br {
   content: "";
@@ -294,7 +289,7 @@ margin:auto;
   -moz-text-fill-color: transparent;
 }
 .menu_zoom_menu3 .menu_text{
-  font-family:'Dancing Script', cursive;
+  font-family: 'Caveat', cursive;
   color: #0887fb;
   font-size:1em;
   font-weight: 500;
@@ -319,7 +314,7 @@ margin:auto;
   -moz-text-fill-color: transparent;
 }
 .menu_zoom_menu4 .menu_text{
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Caveat', cursive;
   font-size: 1em;
   color: #72bf56;
   font-weight: 500;
@@ -365,7 +360,7 @@ footer .btn_droit{
       border:1em solid #fcdfdb;
       box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
       background:#fcdfdb ;
-      margin-bottom: 50px;
+      margin-bottom: 10%;
 }
 
 .m_chic{
@@ -377,7 +372,7 @@ footer .btn_droit{
       border:1em solid  #fff5fe;
       box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
       background: #fff5fe;
-      margin-bottom: 50px;
+      margin-bottom: 10%;
  }
   .m_delice
  {
@@ -389,7 +384,7 @@ footer .btn_droit{
     border:1em solid #edefef;
     box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
     background: #edefef; 
-    margin-bottom: 40px;
+    margin-bottom: 10%;
 }
 .m_palette{
   width:90%;
@@ -400,7 +395,7 @@ footer .btn_droit{
   border:1em solid #fff;
   box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   background:#fff ;
-  margin-bottom: 50px;
+  margin-bottom: 10%;
  }
 
 
@@ -480,31 +475,69 @@ footer .btn_droit{
       color:#3d1319;
       padding-left: 20px;
       padding-right: 20px;
+      
+      background: linear-gradient(to top, rgb(61,19,25) 0%,rgb(61, 19, 25) 10%, transparent 10.01%) no-repeat left bottom /0 100%;
+      transition: background-size 0.7s  ease-in-out;
+  
 }
 
-  .sous_titre1_chic h3{
-    display: flex;
-    justify-content: center;
-    font-family: 'ogiremaregular';
-    font-size:1.2em;
-    font-weight: 700;
-    color: #c67412;
-    
-  }
+
+.sous_titre_chic h3{
+  display: flex;
+  justify-content: center;
+  font-family: 'ogiremaregular';
+  font-size:1.2em;
+  font-weight: 700;
+  color: #c67412;
+  background: linear-gradient(to top, rgb(198, 116, 18) 0%,rgb(198, 116, 18) 10%, transparent 10.01%) no-repeat left bottom /0 100%;
+  transition: background-size 0.7s  ease-in-out;
+  
+}.sous_titre_chic_2 h3{
+  display: flex;
+  justify-content: center;
+  font-family: 'ogiremaregular';
+  font-size:1.2em;
+  font-weight: 700;
+  color: #a56799;
+  background: linear-gradient(to top, rgb(165, 103, 153) 0%,rgb(165, 103, 153) 10%, transparent 10.01%) no-repeat left bottom /0 100%;
+  transition: background-size 0.7s  ease-in-out;
+  
+}.sous_titre_chic_3 h3{
+  display: flex;
+  justify-content: center;
+  font-family: 'ogiremaregular';
+  font-size:1.2em;
+  font-weight: 700;
+  color: #6e4ccc;
+  background: linear-gradient(to top, rgb(110, 76, 204) 0%,rgb(110, 76, 204) 10%, transparent 10.01%) no-repeat left bottom /0 100%;
+  transition: background-size 0.7s  ease-in-out;
+
+}
+
 .sous_titre_delice h3{
     display: flex;
     justify-content: center;
     font-family: 'Kalam', cursive, sans-serif;
     font-size: 1.4em;
     color:#000;
-}
+    background: linear-gradient(to top, rgb(0, 0, 0) 0%,rgb(0, 0, 0) 10%, transparent 10.01%) no-repeat left bottom /0 100%;
+    transition: background-size 0.7s  ease-in-out;
+  }
 .sous_titre_palette h3{
   display: flex;
   justify-content: center;
   font-family: 'Kalam', cursive, sans-serif;
   font-size: 1.4em;
   color:#000;
+  background: linear-gradient(to top, rgb(0, 0, 0) 0%,rgb(0, 0, 0) 10%, transparent 10.01%) no-repeat left bottom /0 100%;
+  transition: background-size 0.7s  ease-in-out;
 }
+h3:hover
+{
+  background-size: 100% 100%;
+  cursor: pointer;
+} 
+
 
 .plats_note  {
     font-family: 'Kalam', cursive, sans-serif;
