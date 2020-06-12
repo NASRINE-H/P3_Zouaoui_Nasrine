@@ -121,9 +121,9 @@ footer .btns a {
   @keyframes  wiggle {
     0% {
       transform: translateX(0); }
-    33% {
+    35% {
       transform: translateX(7px); }
-    66% {
+    65% {
       transform: translateX(-7px); }
     100% {
       transform: translateX(0); } 
@@ -258,6 +258,7 @@ br {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+ 
 }
 
 .menu_zoom_menu2 .menu_text
@@ -283,6 +284,8 @@ margin:auto;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
 }
 .menu_zoom_menu3 .menu_text{
   width: 60%;
@@ -309,6 +312,8 @@ margin:auto;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
 }
 .menu_zoom_menu4 .menu_text{
   width: 60%;
@@ -446,6 +451,9 @@ footer .btn_droit{
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+
 }
 .grand_titre_delice h1{
   font-family: 'Dancing Script', cursive;
@@ -466,6 +474,9 @@ footer .btn_droit{
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+
 }
 .sous_titre_note h3{
       display: flex;
@@ -648,11 +659,12 @@ br {
   margin-bottom: 0em;
 }
 
-@media only screen and (min-width: 360px) {
-body{
+@media only screen and (min-width: 360px)
+ {
+     body{
     font-size: 60%;
   }
-section
+     section
 {
   width: 90%
 }
