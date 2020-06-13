@@ -588,7 +588,8 @@ h3:hover
     color: #3d1319;
     
  }
- */ .plats_principaux{
+ */ 
+ .plats_principaux{
   font-family: 'Croissant One', cursive;
   font-size: 1em;
   color: #a56799;
@@ -663,19 +664,17 @@ br {
  {
      body{
     font-size: 60%;
-  }
-     section
-{
-  width: 90%
-}
-.petitMenu
-{
-  width: 40%;
-  height: 230px;
-}
-.icon_index,.icon.icon_bas{
-  width: 35px;
-  height: 35px;
+    }
+     section{
+      width: 90%
+    }
+    .petitMenu{
+      width: 40%;
+      height: 230px;
+    }
+    .icon_index,.icon.icon_bas{
+       width: 35px;
+       height: 35px;
 }
 }
 
