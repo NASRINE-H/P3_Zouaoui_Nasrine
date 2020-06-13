@@ -201,7 +201,7 @@ main {
 
 
 
-.menu_zoom_menu1 h1, .menu_zoom_menu2 h1, .menu_zoom_menu3 h1, .menu_zoom_menu4 h1 
+.menu_zoom_menu1 h2, .menu_zoom_menu2 h2, .menu_zoom_menu3 h2, .menu_zoom_menu4 h2 
 { 
   align-self: center;
   display: flex;
@@ -433,14 +433,14 @@ footer .btn_droit{
     flex-direction: column;
     align-items: center;    
   }
-  .grand_titre_note h1{
+  .grand_titre_note h2{
     font-family: 'Devonshire', cursive;
     font-size: 2.5em;
     font-weight: 400;
     color:#3d1319;
   }
 
-.grand_titre_chic h1{
+.grand_titre_chic h2{
   font-family: 'Croissant One', cursive;
   font-size: 2.5em;
   margin: 3em 0 2.2em 0;
@@ -455,14 +455,14 @@ footer .btn_droit{
   -ms-text-fill-color: transparent;
 
 }
-.grand_titre_delice h1{
+.grand_titre_delice h2{
   font-family: 'Dancing Script', cursive;
   font-weight: 500;
   font-size: 3em;
   color: #0887fb ;
 }
 
-.grand_titre_palette h1{
+.grand_titre_palette h2{
   font-family: 'Kaushan Script', cursive;
   font-weight: 500;
   font-size: 3em;
