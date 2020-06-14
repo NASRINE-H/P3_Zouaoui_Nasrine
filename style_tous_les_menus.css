@@ -562,7 +562,7 @@ h3:hover
   font-size: 1em;
   color: #c67412;
   font-weight: 700;
-  width: 80%;
+  width: 90%;
   margin: auto;
   }
 .plats_delice
@@ -571,13 +571,13 @@ h3:hover
   font-size: 1.2em;
     font-weight:500 ;
     color:#000;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 .plats_palette
 {
   font-family: 'Kalam', cursive, sans-serif;
-  width: 80%;
+  width: 90%;
   margin: auto;
   
 }
@@ -663,10 +663,10 @@ br {
 @media only screen and (min-width: 360px)
  {
      body{
-    font-size: 60%;
+    font-size: 54%;
     }
      section{
-      width: 90%
+      width: 90%;
     }
     .petitMenu{
       width: 40%;
@@ -675,7 +675,13 @@ br {
     .icon_index,.icon.icon_bas{
        width: 35px;
        height: 35px;
-}
+    }
+    .plats_delice
+  {
+    width: 100%;
+    
+     }
+
 }
 
 @media only screen and (min-width: 500px) {
@@ -691,6 +697,10 @@ br {
     width: 40px;
     height: 40px;
   }
+  .plats_delice
+  {
+    width: 90%;
+     }
     
 }
 
